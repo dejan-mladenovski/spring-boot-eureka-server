@@ -12,7 +12,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 # Package stage.
 #
-FROM openjdk:11.0.9.1-jre as release
+FROM openjdk:11.0.9.1-jre-slim as release
 
 COPY --from=maven-build /home/app/target/eureka-server-0.0.1-SNAPSHOT.jar /apps/eureka-server.jar
 
