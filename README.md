@@ -19,3 +19,6 @@ eureka.client.register-with-eureka=false
 
 Because it is a Spring Boot application, you can override the default configuration 
 properties by adding an `application.properties` file under `/apps/` in the image.
+
+### Important note
+This repository is created for testing the capabilities of the Eureka Server and it is used in a test environment only. It is highly recommended to be used only for testing.
